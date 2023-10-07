@@ -16,6 +16,8 @@ h1, h2, h3 {
 }
 
 
+/* Configuración de barra de navegación y cabecera */
+
 .bg-color {
     background-color: #0097A7;
 }
@@ -106,37 +108,86 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-
 }
 
-/* Intento de configurar por mi cuenta el formulario */
+.contactar:hover {
+    color: var(--oscuro);
+    background-color: var(--amarillo);
+    text-decoration: none;
+}
+
+
+/* Configuración del formulario */
 
 .formulario {
-    background-color: var(--gris);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.5rem;
-}
-
-.contenido-formulario {
-    color: var(--blanco);
-    font-weight: 700;
-    font-size: 1.5rem;
     
 }
 
-.contenido-formulario legend {
-    color: var(--amarillo);
-    font-weight: 700;
-    font-size: 2rem;
+form {
+    background-color: var(--gris);
+    padding: 5rem 5.5rem;
+    border-radius: 2rem;
     text-align: center;
+    width: 50rem;
 }
 
-.campos fieldset {
-    padding: 5rem;
+.formulario h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     border: none;
 }
+
+form fieldset legend {
+    color: var(--amarillo);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+form fieldset label {
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+form fieldset input, form fieldset textarea {
+    padding: 1.7rem 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    border: 0.2rem solid var(--gris);
+    outline: none;
+}
+
+.btn {
+    background-color: var(--azulClaro);
+    color: var(--blanco);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 1.3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--oscuro);
+    background-color: var(--amarillo);
+    text-decoration: none;
+}
+
+
+/* Configuración del main */
 
 main p, footer p{
     color: black;
