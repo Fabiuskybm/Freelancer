@@ -12,7 +12,7 @@ html {
     font-size: 62.5%;
 }
 
-h1, h2, h3 {
+h1, h2 {
     text-align: center;
 }
 
@@ -120,33 +120,41 @@ body {
 
 /* Configuración del main */
 
+.parte-central {
+    display: flex;
+}
+
 .diseño-web, .aplicaciones-web, .e-comerce {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 
-main .icon {
+.iconos {
     background-color: var(--amarillo);
-    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
     border-radius: 50%;
 }
 
-main p, footer p{
-    color: var(--negro);
-    font-size: 1.5rem;
+main h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
 }
 
-main h2 {
-    font-weight: 700;
-    font-size: 3rem;
+main p, main h3 {
+    color: var(--negro);
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
 main h3 {
-    font-weight: 400;
-    font-size: 1.5rem;
     color: var(--azulClaro);
+
 }
 
 
@@ -217,6 +225,12 @@ form fieldset input, form fieldset textarea {
     color: var(--oscuro);
     background-color: var(--amarillo);
     text-decoration: none;
+}
+
+/* Configuración del footer */
+
+footer p {
+    color: var(--negro);
 }
 
 
