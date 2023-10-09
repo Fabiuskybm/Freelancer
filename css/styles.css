@@ -155,7 +155,14 @@ main p, main h3 {
 
 main h3 {
     color: var(--azulClaro);
+    
+}
 
+main p {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
