@@ -20,7 +20,7 @@ h1, h2 {
 /* Configuración de barra de navegación y cabecera */
 
 .bg-color {
-    background-color: #0097A7;
+    background-color: var(--azulClaro);
 }
 
 .navegacion-principal {
@@ -136,8 +136,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
     border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
 }
 
 main h2 {
