@@ -131,6 +131,10 @@ body {
     justify-content: center;
 }
 
+.aplicaciones-web svg {
+    margin: 0.5rem;
+}
+
 .iconos {
     background-color: var(--amarillo);
     display: flex;
