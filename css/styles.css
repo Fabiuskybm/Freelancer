@@ -19,14 +19,18 @@ h1, h2 {
 
 /* Configuración de barra de navegación y cabecera */
 
-.bg-color {
+.nav-bg {
     background-color: var(--azulClaro);
 }
 
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
 .navegacion-principal {
-    margin: 0px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -144,6 +148,7 @@ body {
     width: 12rem;
     height: 12rem;
 }
+
 
 main h2 {
     font-size: 3rem;
