@@ -25,7 +25,7 @@ h1, h2 {
 
 .contenedor {
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .navegacion-principal {
@@ -34,6 +34,11 @@ h1, h2 {
     align-items: center;
 }
 
+@media (max-width:720px) {
+    .navegacion-principal{
+        flex-direction: column;
+    }
+}
 
 .navegacion-principal a {
     font-weight: 700;
