@@ -10,6 +10,11 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 h1, h2 {
@@ -35,9 +40,10 @@ h1, h2 {
 }
 
 @media (max-width:720px) {
-    .navegacion-principal{
+    .navegacion-principal, .parte-central{
         flex-direction: column;
     }
+
 }
 
 .navegacion-principal a {
