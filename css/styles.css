@@ -44,6 +44,10 @@ h1, h2 {
         flex-direction: column;
     }
 
+    .boton {
+        width: 90%;
+    }
+
 }
 
 .navegacion-principal a {
@@ -112,7 +116,7 @@ body {
     justify-content: center;
 }
 
-.contactar {
+.boton {
     background-color: var(--azulClaro);
     color: var(--blanco);
     padding: 1rem 3rem;
@@ -126,10 +130,14 @@ body {
     text-align: center;
 }
 
-.contactar:hover {
+.boton:hover {
     color: var(--oscuro);
     background-color: var(--amarillo);
     text-decoration: none;
+}
+
+form .boton{
+    margin-top: 0px;
 }
 
 
@@ -241,6 +249,8 @@ form fieldset input, form fieldset textarea {
 
 .btn {
     background-color: var(--azulClaro);
+    text-decoration: none;
+    border-radius: 0.5rem;
     color: var(--blanco);
     text-align: center;
     font-weight: 700;
