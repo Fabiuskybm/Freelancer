@@ -39,13 +39,13 @@ h1, h2 {
     align-items: center;
 }
 
-@media (max-width:720px) {
+@media (max-width:768px) {
     .navegacion-principal, .parte-central{
         flex-direction: column;
     }
 
     .boton {
-        width: 90%;
+        width: 75%;
     }
 
 }
