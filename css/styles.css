@@ -29,8 +29,9 @@ h1, h2 {
 }
 
 .contenedor {
-    max-width: 120rem;
+    max-width: 100rem;
     margin: 0px auto;
+
 }
 
 .navegacion-principal {
@@ -67,9 +68,17 @@ h1, h2 {
 
 
 body {
-    background-color: var(--blanco);
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
     font-size: 1.6rem;
     font-family: 'Krub', sans-serif;
+}
+
+.sombra {
+    box-shadow: 0 0 14px 0 rgba(0,0,0,0.65);
+    background-color: var(--blanco);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
 }
 
 .titulo {
@@ -143,11 +152,12 @@ form .boton{
 
 /* Configuración del main */
 
-.parte-central {
-    display: flex;
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.diseño-web, .aplicaciones-web, .e-comerce {
+.servicio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,8 +199,6 @@ main h3 {
 main p {
     width: 80%;
     text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -269,6 +277,7 @@ form fieldset input, form fieldset textarea {
 
 footer p {
     color: var(--negro);
+    text-align: center;
 }
 
 
