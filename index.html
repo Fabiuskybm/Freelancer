@@ -24,6 +24,7 @@
             <a href="clientes.html">Clientes</a>
             <a href="#formulario" title="Ir al formulario de contacto">Contacto</a>
             <a href="misproyectos.html">Mis Proyectos</a>
+            <a href="presupuesto.html">Presupuesto</a>
         </nav>
 
     </div>
@@ -118,26 +119,37 @@
         
     </main>
         
-        <section class="formulario">
-            <div id="formulario">
-                <h2>Contacto</h2>
-                <form>
-                    <fieldset>
-                        <legend>Contáctame llenado todos los campos</legend>
+        <section>
+
+            <h2>Contacto</h2>
+            <form action="" id="formulario" class="formulario">
+                <fieldset>
+                    <legend>Contáctame llenado todos los campos</legend>
+
+                    <div class="campo">
                         <label>Nombre y Apellidos</label>
-                        <input  type="text" placeholder="Tu Nombre">
+                        <input class="input-text"  type="text" placeholder="Tu Nombre">
+                    </div>
+
+                    <div class="campo">
                         <label>Teléfono</label>
-                        <input  type="text" placeholder="Tu Teléfono">
+                        <input class="input-text"  type="tel" placeholder="Tu Teléfono">
+                    </div>
+
+                    <div class="campo">
                         <label>Correo</label>
-                        <input  type="email" placeholder="Tu correo">
+                        <input class="input-text"  type="email" placeholder="Tu correo">
+                    </div>
+
+                    <div class="campo">
                         <label>Mensaje</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <!-- <input class="btn" type="submit" value="Enviar"> -->
-                    </fieldset>
-                    <a class="boton" href="mailto:fabio.benitezmolina@gmail.com">Enviar</a>
-                </form>
-                
-            </div>
+                        <textarea class="input-text" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <!-- <input class="btn" type="submit" value="Enviar"> -->
+                </fieldset>
+                <a class="boton" href="mailto:fabio.benitezmolina@gmail.com">Enviar</a>
+            </form>
             
         </section>
 

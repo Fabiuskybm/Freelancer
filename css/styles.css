@@ -41,8 +41,18 @@ h1, h2 {
 }
 
 @media (max-width:768px) {
-    .navegacion-principal, .parte-central{
+    .navegacion-principal {
         flex-direction: column;
+    }
+
+    .contenedor {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .servicios {
+        flex-direction: column;
+        /* grid-template-rows: 1fr 1fr 1fr; */
     }
 
     .boton {
@@ -153,8 +163,9 @@ form .boton{
 /* Configuración del main */
 
 .servicios {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .servicio {
@@ -205,6 +216,49 @@ main p {
 /* Configuración del formulario */
 
 .formulario {
+    background-color: var(--gris);
+    margin: 0 auto;
+    width: min(60rem, 90%);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--amarillo);
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.campo label{
+    display: block;
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.input-text {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.campo textarea {
+    height: 20rem;
+}
+
+/* .formulario {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,7 +270,7 @@ form {
     padding: 5rem 5.5rem;
     border-radius: 2rem;
     text-align: center;
-    width: 50rem;
+    width: 70rem;
 }
 
 .formulario h2{
@@ -253,7 +307,7 @@ form fieldset input, form fieldset textarea {
     margin-bottom: 2rem;
     border: 0.2rem solid var(--gris);
     outline: none;
-}
+} */
 
 .btn {
     background-color: var(--azulClaro);
