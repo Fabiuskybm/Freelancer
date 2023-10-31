@@ -307,7 +307,7 @@ form fieldset input, form fieldset textarea {
     margin-bottom: 2rem;
     border: 0.2rem solid var(--gris);
     outline: none;
-} */
+}
 
 .btn {
     background-color: var(--azulClaro);
@@ -325,7 +325,8 @@ form fieldset input, form fieldset textarea {
     color: var(--oscuro);
     background-color: var(--amarillo);
     text-decoration: none;
-}
+} */
+
 
 /* Configuración del footer */
 
