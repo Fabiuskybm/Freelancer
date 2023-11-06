@@ -1,60 +1,132 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/styles_presupuesto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;700&display=swap" rel="stylesheet">
 
-    <title>Presupuesto</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" href="/img/freelancer.png">
+
+    <title>Fabio Benítez - Freelancer</title>
+    
 
 </head>
 
 <body>
 
-    <main>
+    <header>
+        <h1 class="titulo">Fabio Benítez <span>Freelancer</span></h1>
+    </header>
 
-        <section class="formulario-presupuesto">
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="sobremi.html">Sobre Mi</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="#formulario" title="Ir al formulario de contacto">Contacto</a>
+            <a href="misproyectos.html">Mis Proyectos</a>
+            <a href="./presupuesto.html">Presupuesto</a>
+        </nav>
+
+    </div>
+
+    <section class="hero"> 
+        <div class="contenido-hero">
+            <h2>Diseño y Desarrollo Web</h2>
+            <h2>Freelancer</h2>
+            <div class="location">
+                <a href="https://www3.gobiernodecanarias.org/medusa/edublog/iesanaluisabenitez/" target="_blank" title="Visitar sitio web del centro">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="76" height="76" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                </a>
+                <p>IES Ana Luisa Benítez - Las Palmas de Gran Canaria</p>
+
+            </div>
+    
+            <a class="boton" href="#formulario" title="Ir al formulario de contacto">Contactar</a>
             
-            <div>
-                <form>
-                    <fieldset>
-                        <legend>Presupuesto</legend>
-                        <label>Empresas</label>
-                        <input  type="text" placeholder="Nombre de la empresa">
-                        <label for="">¿Qué tipo de servicio desea?</label>
-                        <input type="checkbox" name="tecnologia" id="frontend" value="FrontEnd"> FrontEnd
-                        <input type="checkbox" name="tecnologia" id="backend" value="BackEnd"> BackEnd
-                        <label for="" class="tecnologia_backend">¿Qué teconología BackEnd desea?</label>
-                        <select name="" class="tecnologia_backend">
+        </div>
+        
+    </section>
+        
+    <section>
+
+        <h2>Contacto</h2>
+        <form action="" id="formulario" class="formulario">
+            <fieldset>
+                <legend>Presupuesto Web</legend>
+
+                <div class="campo">
+                    <label>Empresa</label>
+                    <input class="input-text"  type="text" placeholder="Tu Empresa">
+                </div>
+
+                <div class="campo">
+                    <label>¿Qué tipo de servicio desea?</label>
+                    <input name="tecnologia" class="input-text" type="checkbox" id="frontend" value="Frontend">
+                    <label for="frontend">Frontend</label>
+                    <input name="tecnologia" class="input-text"  type="checkbox" id="backend" value="Backend">
+                    <label for="backend">Backend</label>
+                    <div class=" campo tecnologia-backend">
+                        <label>¿Qué tipo de teconología BackEnd desea?</label>
+                        <select name="" class="input-text">
                             <option value="">Seleccione una opción</option>
                             <option value="">Java</option>
                             <option value="">PHP</option>
                             <option value="">Python</option>
                             <option value="">Otros...</option>
                         </select>
-                        <label for="">¿Desea una imagen corporativa?</label>
-                        <input type="radio" name="corp_img"> Si
-                        <input type="radio" name="corp_img"> No
-                        <label for="">¿Actualmente ya tiene una web?</label>
-                        <input type="url" placeholder="Introduzca su web actual aquí">
-                        <label>Teléfono</label>
-                        <input  type="text" placeholder="Tu Teléfono">
-                        <label>Correo</label>
-                        <input  type="email" placeholder="Tu correo">
-                        <label>Mensaje</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <!-- <input class="btn" type="submit" value="Enviar"> -->
-                    </fieldset>
-                    <a class="boton" href="mailto:fabio.benitezmolina@gmail.com">Enviar</a>
-                </form>
-                
-            </div>
-            
-        </section>
+                    </div>
+                </div>
 
-    </main>
-    
-</body>
+                <div class="campo">
+                </div>
 
+                <div class="campo">
+                    <label>¿Desea una imagen corporativa?</label>
+                    <input class="input-text" type="radio" name="corp_img"> Si
+                    <input class="input-text" type="radio" name="corp_img"> No
+                </div>
+
+                <div class="campo">
+                    <label for="">¿Actualmente ya tiene una web?</label>
+                    <input class="input-text" type="url" placeholder="Introduzca su web actual aquí">
+                </div>
+
+                <div class="campo">
+                    <label>Teléfono</label>
+                    <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                </div>
+
+                <div class="campo">
+                    <label>Correo</label>
+                    <input class="input-text" type="email" placeholder="Tu correo">
+                </div>
+
+                <div class="campo">
+                    <label>Introduce una pequeña descripción de cómo visualizas tu proyecto</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                </div>
+
+            </fieldset>
+            <a class="boton" href="#">Enviar</a>
+        </form>
+        
+    </section>
+
+
+    <footer>
+        <p>Fabio Benítez Freelancer</p>
+    </footer>
+
+</body>    
 </html>
+
