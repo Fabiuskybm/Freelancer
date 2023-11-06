@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styles_presupuesto.css">
+
     <title>Presupuesto</title>
 
 </head>
@@ -19,6 +22,22 @@
                         <legend>Presupuesto</legend>
                         <label>Empresas</label>
                         <input  type="text" placeholder="Nombre de la empresa">
+                        <label for="">¿Qué tipo de servicio desea?</label>
+                        <input type="checkbox" name="tecnologia" id="frontend" value="FrontEnd"> FrontEnd
+                        <input type="checkbox" name="tecnologia" id="backend" value="BackEnd"> BackEnd
+                        <label for="" class="tecnologia_backend">¿Qué teconología BackEnd desea?</label>
+                        <select name="" class="tecnologia_backend">
+                            <option value="">Seleccione una opción</option>
+                            <option value="">Java</option>
+                            <option value="">PHP</option>
+                            <option value="">Python</option>
+                            <option value="">Otros...</option>
+                        </select>
+                        <label for="">¿Desea una imagen corporativa?</label>
+                        <input type="radio" name="corp_img"> Si
+                        <input type="radio" name="corp_img"> No
+                        <label for="">¿Actualmente ya tiene una web?</label>
+                        <input type="url" placeholder="Introduzca su web actual aquí">
                         <label>Teléfono</label>
                         <input  type="text" placeholder="Tu Teléfono">
                         <label>Correo</label>

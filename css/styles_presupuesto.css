@@ -1,0 +1,12 @@
+
+.tecnologia_backend {
+    display: none;
+}
+
+#backend:checked ~ .tecnologia_backend {
+    display: block;
+}
+
+#frontend:checked ~ .tecnologia_backend {
+    display: none;
+}
