@@ -100,7 +100,7 @@ body {
 }
 
 .hero {
-    background-image: url("/img/hero.jpg");
+    background-image: url("../img/hero.jpg");
     height: 45rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,6 +210,21 @@ main p {
 }
 
 
+/* Configuración sobre mi*/
+
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-mi p {
+    margin: 0;
+    line-height: 3rem;
+}
+
+
 /* Configuración tabla proyectos*/
 
 .proyectos {
@@ -227,12 +242,41 @@ th {
 }
 
 td {
+    background-color: var(--grisClaro);
     height: 8rem;
 }
 
 th, td {
     border: 2px solid var(--oscuro);
     text-align: center;
+}
+
+.numero-proyecto {
+    font-size: 1.7rem;
+}
+
+.proyect-button {
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: 0.5s;
+}
+
+.proyect-button:hover {
+    background-color: var(--amarillo);
+    border: 1px solid var(--oscuro);
+    color: var(--negro);
+    transition: 0.5s;
+}
+
+.github-img {
+    width: 4rem;
+    height: 4rem;
 }
 
 
@@ -326,6 +370,29 @@ th, td {
 
 .campo {
     margin: 2rem 0 2rem 0;
+}
+
+.frontend {
+    margin-top: 2rem;
+}
+
+.backend {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.corp-img, .corp-img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.frontend, .backend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
 }
 
 /* Footer */

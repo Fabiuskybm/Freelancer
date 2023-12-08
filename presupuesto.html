@@ -71,29 +71,33 @@
 
                 <div class="campo">
                     <label>¿Qué tipo de servicio desea?</label>
-                    <input name="tecnologia" class="input-text" type="checkbox" id="frontend" value="Frontend">
-                    <label for="frontend">Frontend</label>
-                    <input name="tecnologia" class="input-text"  type="checkbox" id="backend" value="Backend">
-                    <label for="backend">Backend</label>
-                    <div class=" campo tecnologia-backend">
-                        <label>¿Qué tipo de teconología BackEnd desea?</label>
-                        <select name="" class="input-text">
-                            <option value="">Seleccione una opción</option>
-                            <option value="">Java</option>
-                            <option value="">PHP</option>
-                            <option value="">Python</option>
-                            <option value="">Otros...</option>
-                        </select>
+                    <div class="frontend">
+                        <label for="frontend">Frontend</label>
+                        <input name="tecnologia" class="input-text" type="checkbox" id="frontend" value="Frontend">
+                    </div>
+                    <div class="backend">
+                        <label for="backend">Backend</label>    
+                        <input name="tecnologia" class="input-text" type="checkbox" id="backend" value="Backend">
+
+                        <div class=" campo tecnologia-backend">
+                            <label>¿Qué tipo de teconología BackEnd desea?</label>
+                            <select name="" class="input-text">
+                                <option value="">Seleccione una opción</option>
+                                <option value="">Java</option>
+                                <option value="">PHP</option>
+                                <option value="">Python</option>
+                                <option value="">Otros...</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
                 <div class="campo">
-                </div>
-
-                <div class="campo">
                     <label>¿Desea una imagen corporativa?</label>
-                    <input class="input-text" type="radio" name="corp_img"> Si
-                    <input class="input-text" type="radio" name="corp_img"> No
+                    <label for="">Si</label>
+                    <input class="input-text" type="radio" name="corp_img">
+                    <label for="">No</label>
+                    <input class="input-text" type="radio" name="corp_img">
                 </div>
 
                 <div class="campo">
